@@ -3,11 +3,11 @@ import createError from "../utils/createError.js";
 
 export const createGig = async (req, res, next) => {
   console.log('hot',req.body);
-  if (!req.isSeller){
-    console.log('isSeller');
-    return next(createError(403, "Only sellers can create a gig!"));
+  // if (!req.isSeller){
+  //   console.log('isSeller');
+  //   return next(createError(403, "Only sellers can create a gig!"));
 
-  }
+  // }
      
 
    // console.log('hottt'); 
