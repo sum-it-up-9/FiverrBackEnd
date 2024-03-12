@@ -17,7 +17,10 @@ dotenv.config();
 mongoose.set("strictQuery", true);
 
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://freelancegigs.netlify.app',
+  credentials: true // Allow credentials (e.g., cookies, authorization headers)
+}));
 app.use(express.json());
 app.use(cookieParser());
 
