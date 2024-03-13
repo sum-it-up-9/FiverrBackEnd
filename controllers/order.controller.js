@@ -22,7 +22,7 @@ export const intent = async (req, res, next) => {
     buyerId: req.userId,
     sellerId: gig.userId,
     price: gig.price,
-   // payment_intent: paymentIntent.id,
+    payment_intent: '',
   });
 
   await newOrder.save();
